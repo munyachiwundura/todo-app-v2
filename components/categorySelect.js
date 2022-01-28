@@ -58,7 +58,7 @@ export default function CategorySelect(props) {
                      :<div className={styles.projects_select_modal}>
                     
                         {categories.map((x, y) => 
-                        <div className={styles.project_item_select_container}>
+                        <div key={y} className={styles.project_item_select_container}>
                         <div onClick={()=> {
                             setCurrentCategory(x)
                         props.currentCategory(x)
