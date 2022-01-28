@@ -119,8 +119,8 @@ async function dbDelete(id) {
                     </div>
 
                 {
-                    categories.map((x) => 
-                    <div onClick={() => setSelectCategory(x.id)} className={styles.category}>
+                    categories.map((x, y) => 
+                    <div key={y} onClick={() => setSelectCategory(x.id)} className={styles.category}>
                     <div className={styles.category_icon_container} style={{backgroundColor: x.color}}>
                         <p>{x.icon}</p>
                     </div>
