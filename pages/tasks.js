@@ -8,14 +8,20 @@ import { Context } from "../context";
 import {  getSession } from 'next-auth/react'
 import { AnimateSharedLayout, AnimatePresence} from 'framer-motion'
 
-export default function Home(props) {
+export default function Tasks(props) {
   
   const [tasks, setTasks] = useState(props.todos)
-  const [completedTasks, setCompletedTasks] = useState(props.todos.filter(x => x.status === true))
+  const [selectCategory, setSelectCategory] = useState(false)
   const { state, dispatch } = useContext(Context);
-  
+  const [categories, setCategories] = useState([])
 
   
+async function getCategories() {
+    const request = await fetch(`/api/categories`)
+    const data = await request.json()
+    setCategories(data.categories)    
+}
+
   async function getTodos() {
     const request = await fetch(`/api/todos`)
     const data = await request.json()
@@ -65,7 +71,6 @@ async function dbDelete(id) {
       type: "ADD_TASK",
       payload: items
     })
-    setCompletedTasks(tasks.filter(x => x.status === true))
     dbDelete(e.id)
   }
 
@@ -80,7 +85,6 @@ async function dbDelete(id) {
       type: "ADD_TASK",
       payload: items
     })
-    setCompletedTasks(state.tasks.filter(x => x.status === true))
     dbStatusChange(e.id, e.status)
     }
 
@@ -90,7 +94,7 @@ async function dbDelete(id) {
 
     useEffect(() => {
       getTodos() 
-      console.log(state)
+      getCategories()
     }, [])
 
 
@@ -102,26 +106,45 @@ async function dbDelete(id) {
         <link rel="icon" href="/icon.png" />
     </Head>
     <div className={styles.container}>
-    <header className={styles.greeting_container}>
-        <h1 className={styles.title}>Home</h1>
-        <div >
-          <p className={styles.greeting}>Hello</p>
-          <p className={styles.greeting}>{props.username}</p>
-        </div>
-      <section>
-      <TasksProgress total={tasks.length} done={completedTasks.length} progress={completedTasks.length / props.todos.length * 100 + "%"}/>  
-      </section>
-      </header>
+    
+      <h1>All Tasks</h1>
+      <section className={styles.category_section}>
+                <span className={styles.section_span}>Categories</span>
+                <div className={styles.categories_container}>
+                <div onClick={() => setSelectCategory(false)} className={styles.category}>
+                    <div className={styles.category_icon_container} style={{backgroundColor: '#276bf2'}}>
+                        <p>All</p>
+                    </div>
+                    <p>View All</p>
+                    </div>
+
+                {
+                    categories.map((x) => 
+                    <div onClick={() => setSelectCategory(x.id)} className={styles.category}>
+                    <div className={styles.category_icon_container} style={{backgroundColor: x.color}}>
+                        <p>{x.icon}</p>
+                    </div>
+                    <p>{x.title}</p>
+                    </div>
+                    )
+                }
+                </div>
+        </section>  
+      
+     
       <section className={styles.right_section}>
-        <span>Todays Tasks</span>
+        <span className={styles.section_span}>Todays Tasks</span>
           <AnimateSharedLayout type="crossfade">
         <AnimatePresence>
 
 
-    {
-      state.tasks.map((x, y) => 
+    { selectCategory?
+      state.tasks.filter(i => i.categoryId === selectCategory).map((x, y) => 
       <TodoItem key={y} title={x.title} order={y} delete={() => deleteItem(x)} category={x.category} date={x.createdAt} done={x.status} statusChange={() => statusChange(x)}/>
-      )
+      ):
+    state.tasks.map((x, y) => 
+    <TodoItem key={y} title={x.title} order={y} delete={() => deleteItem(x)} category={x.category} date={x.createdAt} done={x.status} statusChange={() => statusChange(x)}/>
+    )
     }
       </AnimatePresence>
           </AnimateSharedLayout>

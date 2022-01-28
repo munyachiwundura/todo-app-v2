@@ -1,0 +1,21 @@
+.backdrop {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: fixed;
+  background: linear-gradient(
+    167.82deg,
+    #1a162b 0%,
+    #191a1f 50.57%,
+    #110f29 99.08%
+  );
+  top: 0;
+  z-index: 9999999;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  width: 100px;
+  height: 100px;
+}

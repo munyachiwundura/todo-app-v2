@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background: linear-gradient(
+    106.94deg,
+    #f7b5e4 2.22%,
+    #a3affe 50.95%,
+    #87dcd0 97.7%
+  );
+  width: clamp(250px, 100%, 300px);
+  height: 200px;
+  border-radius: 30px;
+  color: #000;
+  padding-left: 24px;
+}
+
+.title {
+  font-size: 24px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.progress {
+  font-size: 18px;
+}
+
+.progress_bar {
+  position: relative;
+  width: 90%;
+  height: 24px;
+  background: linear-gradient(90deg, #fff 0%, rgba(255, 255, 255, 0.5) 101.4%);
+  border-radius: 10px;
+}
+
+.progress_indicator {
+  position: absolute;
+  background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.5) 101.4%);
+  height: 100%;
+  border-radius: 10px;
+}

@@ -1,0 +1,122 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile_picture img{
+    border-radius: 50px;
+}
+
+.user_container {
+    display: flex;
+    align-items: center;
+}
+
+.user_text {
+padding: 22px;
+display: flex;
+flex-direction: column;
+}
+
+.user_text p {
+    font-size: 24px;
+    margin: 0;
+}
+
+.user_text span {
+    font-size: 12px;
+    opacity: 50%;
+}
+
+.container section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.container button{
+    position: relative;
+    margin-top: 1rem;
+    width: 350px;
+    height: 50px;
+    background: rgba(146, 146, 146, 0.25);
+    border-radius: 30px;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.container button i {
+    margin-right: 1rem;
+}
+
+.container section span {
+    color: #7A7C84;
+    align-self: flex-start;
+} 
+
+.toggle {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: 10px;
+    top: 10px;
+    width: 55px;
+height: 31px;
+background: #276BF2;
+border-radius: 20px;
+padding-left: 5px;
+padding-right: 5px;
+}
+
+.toggle div {
+    background-color: #fff;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.login {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 10;
+    background: linear-gradient(
+        167.82deg,
+        #1a162b 0%,
+        #191a1f 50.57%,
+        #110f29 99.08%
+      );
+      display: flex;
+      flex-direction:column;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 100px;
+      padding-bottom: 50px;
+}
+
+.login_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #276BF2;
+    border-radius: 10px;
+    font-size: 24px;
+    height: 60px;
+    width: 350px;
+    text-align: center;
+}
+
+.login img {
+    height: 300px;
+    width: 350px;
+}
+
+.login h1 {
+    width: 250px;
+}

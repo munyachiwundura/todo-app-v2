@@ -1,0 +1,90 @@
+.nav {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  bottom: 0;
+  height: 100px;
+  width: 100vw;
+  background-color: #11101f;
+  border-radius: 30px 30px 0 0;
+  border: 1px solid #fff;
+  background-clip: padding-box;
+  z-index: 5;
+  font-size: 30px;
+}
+
+#addButton {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #276bf2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.nav_item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-left: 30px;
+  cursor: pointer;
+  height: 100px;
+}
+.nav_item:hover {
+  background-color: #276bf2;
+}
+.nav_item_title {
+  margin-left: 40px;
+}
+
+/* .nav::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  z-index: -1;
+  border-radius: inherit;
+  margin: 5px;
+} */
+
+@media only screen and (min-width: 800px) {
+  .nav {
+    height: 100vh;
+    width: 100px;
+    left: 0;
+    flex-direction: column;
+    border-radius: 0 30px 30px 0;
+    border-left: none;
+    align-items: flex-start;
+
+    overflow: hidden;
+  }
+  #flex_order_4 {
+    order: 4;
+  }
+  #flex_order_3 {
+    order: 3;
+  }
+  #flex_order_2 {
+    order: 2;
+  }
+  #flex_order_1 {
+    order: 1;
+  }
+  #addButton {
+    order: 5;
+    margin-left: 18px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .nav {
+    border-bottom: none;
+  }
+}

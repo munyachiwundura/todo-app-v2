@@ -1,0 +1,16 @@
+.container {
+    /* background-color: aqua; */
+    display: flex;
+    position: relative;
+}
+
+.content {
+    /* background-color: white; */
+    height: 100%;
+    padding-bottom: 5rem;
+}
+
+.refresh {
+ position: absolute;
+ top: 1rem;
+}
