@@ -75,7 +75,7 @@ export default function Profile() {
       : 
       <div className={styles.login}>
           <img src="/greeter.svg" />
-          <h1>The only todo app you'll ever need</h1>
+          <h1>The only todo app you will ever need</h1>
           <div className={styles.login_button} onClick={() => signIn()}>Get Started</div>
       </div>
  
