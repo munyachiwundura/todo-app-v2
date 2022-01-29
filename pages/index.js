@@ -120,7 +120,7 @@ async function dbDelete(id) {
 
     {
       state.tasks.map((x, y) => 
-      <TodoItem key={y} title={x.title} order={y} delete={() => deleteItem(x)} category={x.category} date={x.createdAt} done={x.status} statusChange={() => statusChange(x)}/>
+      <TodoItem key={y} title={x.title} order={y} delete={() => deleteItem(x)} category={x.category} date={x.completeby} done={x.status} statusChange={() => statusChange(x)}/>
       )
     }
       </AnimatePresence>
@@ -138,7 +138,12 @@ let data = null;
 let username = null;
 
 if(!session) {
-  context.res.writeHead(307, {Location: '/profile'})
+  return {
+    redirect: {
+      permanent: false,
+      destination: '/profile'
+    }
+  }
 }else {
 username = session.user.name
 data = await prisma.todo.findMany({

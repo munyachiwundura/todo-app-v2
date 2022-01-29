@@ -1,0 +1,63 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 200px;
+}
+
+.title {
+    width: 350px;
+    text-align: left;
+    font-size: 24px;
+}
+
+.button {
+    width: 350px;
+height: 77px;
+background: rgba(146, 146, 146, 0.25);
+border-radius: 30px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-left: 15px;
+padding-right: 15px;
+margin-top: 1rem;
+}
+
+.icon {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+border-radius: 20px;
+font-size: 32px;
+
+}
+
+#totalTask .icon {
+    background: #5CB85C;
+}
+
+#completedTasks .icon {
+    background: #276bf2;
+}
+
+#totalTask .arrow {
+    color: #5CB85C;
+}
+#totalTask .arrow i {
+    color: #fff;
+}
+
+#completedTasks .arrow {
+    color: #276bf2;
+}
+#completedTasks .arrow i {
+    color: #fff;
+}
+
+.button_title {
+    font-size: 24px;
+    width: 200px;
+}

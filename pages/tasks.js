@@ -140,10 +140,10 @@ async function dbDelete(id) {
 
     { selectCategory?
       state.tasks.filter(i => i.categoryId === selectCategory).map((x, y) => 
-      <TodoItem key={y} title={x.title} order={y} delete={() => deleteItem(x)} category={x.category} date={x.createdAt} done={x.status} statusChange={() => statusChange(x)}/>
+      <TodoItem key={y} title={x.title} order={y} delete={() => deleteItem(x)} category={x.category} date={x.completeby} done={x.status} statusChange={() => statusChange(x)}/>
       ):
     state.tasks.map((x, y) => 
-    <TodoItem key={y} title={x.title} order={y} delete={() => deleteItem(x)} category={x.category} date={x.createdAt} done={x.status} statusChange={() => statusChange(x)}/>
+    <TodoItem key={y} title={x.title} order={y} delete={() => deleteItem(x)} category={x.category} date={x.completeby} done={x.status} statusChange={() => statusChange(x)}/>
     )
     }
       </AnimatePresence>

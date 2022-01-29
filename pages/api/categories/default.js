@@ -4,13 +4,15 @@ import { getSession } from "next-auth/react"
 export default async function handler(req, res) {
   const session = await getSession({ req })
 
+    let request;
+
     const user = await prisma.user.findUnique({
         where: {
             email: session.user.email
         }
     })
        
-        const request = await prisma.todoCategory.findFirst({
+         request = await prisma.todoCategory.findFirst({
            where: {
                title: 'Default',
                userId: user.id

@@ -13,7 +13,6 @@ const AddTaskModal = (props) => {
     const router = useRouter()
     const [taskTitle, setTaskTitle] = useState("")
     const [taskTime, setTaskTime] = useState(new Date())
-    const [taskColor, setTaskColor] = useState("pink")
     const [category, setCategory] = useState([])
     const {data: session} = useSession();
 
@@ -84,30 +83,19 @@ const AddTaskModal = (props) => {
                          exit={{y:100}}
             >
                 <div className={styles.title_input_container}>
-                    <div style={{background: taskColor}} className={styles.project_color}></div>
+                    <div className={styles.project_color}></div>
                     <input className={styles.title_input} type="text" placeholder="Task Name" onChange={(e) => setTaskTitle(e.target.value)}/>
                 </div>
                 <div className={styles.dates_container}>
                     <div className={styles.date_container}>
-                        {/* <div id={styles.calendarStart} className={styles.calendar_icon}>
-                            <i className="bi bi-calendar"></i>
-                        </div> */}
-                            <input id={styles.calendarStart} className={styles.calendar_icon} type='datetime-local' onChange={(e) => setTaskTime(e.target.value)}/>
+                        
+                            <input id={styles.calendarStart} className={styles.calendar_icon} type='datetime-local' onChange={(e) => setTaskTime(new Date(e.target.value))}/>
                         <div className={styles.dates_title_container}>
-                            <p className={styles.date_title}>Start</p>
+                            <p className={styles.date_title}>Complete By</p>
                             <p id={styles.dateStart} className={styles.date_time}>Today 3pm</p>
                         </div>
                     </div>
-                    <div className={styles.date_container}>
-                            <input id={styles.calendarEnd} className={styles.calendar_icon} type='datetime-local'/>
-                        {/* <div id={styles.calendarEnd} className={styles.calendar_icon}>
-                            <i className="bi bi-calendar"></i>
-                        </div> */}
-                        <div className={styles.dates_title_container}>
-                            <p className={styles.date_title}>End</p>
-                            <p id={styles.dateEnd} className={styles.date_time}>Today 3pm</p>
-                        </div>
-                    </div>
+                    
                     
                 </div>
                 <CategorySelect currentCategory={(x) => setCategory(x)}/>

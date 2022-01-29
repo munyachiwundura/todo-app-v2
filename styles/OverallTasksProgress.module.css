@@ -6,13 +6,13 @@
 
 .container {
   display: flex;
-  width: clamp(250px, 100%, 300px);
+  width: 350px;
   height: 200px;
   background: rgba(146, 146, 146, 0.25);
   border-radius: 30px;
   align-items: center;
   padding-left: 15px;
-  margin-top: 30px;
+  margin-top: 1rem;
 }
 
 .text_container {

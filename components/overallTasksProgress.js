@@ -1,14 +1,14 @@
 import styles from '../styles/OverallTasksProgress.module.css'
 
-const OverallTasksProgress = () => {
+const OverallTasksProgress = (props) => {
     return ( 
         <div className={styles.container}>
             <div className={styles.text_container}>
                 <span>Monthly Goals</span>
-                <p className={styles.title}>60/80 Tasks</p>
+                <p className={styles.title}>{props.data.completed}/{props.data.total} Tasks</p>
                 <span>You have completed</span>
                 <br></br>
-                <span>60/80 Tasks this month</span>
+                <span>{props.data.completed}/{props.data.total} Tasks this month</span>
                 <br></br>
                 <button className={styles.button}>All Tasks</button>
             </div>
