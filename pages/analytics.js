@@ -65,15 +65,15 @@ export async function getServerSideProps(context) {
     const session = await getSession(context)
     
     
-    // if(!session) {
-    //   return {
-    //     redirect: {
-    //       permanent: false,
-    //       destination: '/profile'
-    //     }
-    //   }
-    // }else {
-        const request = await fetch(`http://localhost:3000/api/analytics`, {
+    if(!session) {
+      return {
+        redirect: {
+          permanent: false,
+          destination: '/profile'
+        }
+      }
+    }else {
+        const request = await fetch(`http://overkilltodoapp.vercel.app/api/analytics`, {
             method: "POST",
             body: JSON.stringify({
               user: session.user,
