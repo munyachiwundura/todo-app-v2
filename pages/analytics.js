@@ -12,7 +12,7 @@ export default function Analytics(props) {
     return (
         <div className={styles.container}>
             <h1>Analytics</h1>
-            <header>
+             <header>
                 <p className={styles.title}>Here is an overview of your goals</p>
             </header>
             <section>
