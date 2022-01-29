@@ -10,7 +10,7 @@ export default function WeeklyTaskProgress(props) {
   <div className={styles.container}>
       <span className={styles.title}>Completed in the last 7 Days</span>
       <div className={styles.stick_container}>
-        {props.data.map((x) => <CandleStick day={x.day} completed={x.completed/highest} total={x.total/highest}/>)}
+        {props.data.map((x, y) => <CandleStick key={y} day={x.day} completed={x.completed/highest} total={x.total/highest}/>)}
       </div>
     
       <div className={styles.box}></div>
