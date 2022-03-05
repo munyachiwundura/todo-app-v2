@@ -70,12 +70,15 @@ export async function getServerSideProps(context) {
       },
     };
   } else {
-    const request = await fetch(`http://localhost:3000/api/analytics`, {
-      method: "POST",
-      body: JSON.stringify({
-        user: session.user,
-      }),
-    });
+    const request = await fetch(
+      `http://therealmunya.vercel.app/api/analytics`,
+      {
+        method: "POST",
+        body: JSON.stringify({
+          user: session.user,
+        }),
+      }
+    );
     const data = await request.json();
 
     console.log(request);

@@ -138,7 +138,7 @@ export default function Tasks(props) {
           <AnimateSharedLayout type="crossfade">
             <AnimatePresence>
               {selectCategory
-                ? props.todos
+                ? state.tasks
                     .filter((i) => i.categoryId === selectCategory)
                     .map((x, y) => (
                       <TodoItem
@@ -152,7 +152,7 @@ export default function Tasks(props) {
                         statusChange={() => statusChange(x)}
                       />
                     ))
-                : props.todos.map((x, y) => (
+                : state.tasks.map((x, y) => (
                     <TodoItem
                       key={y}
                       title={x.title}

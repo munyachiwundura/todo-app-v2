@@ -7,7 +7,7 @@ self.addEventListener("push", function (event) {
       body: data.message,
       icon: "https://overkilltodoapp.vercel.app/icon.png",
       image: "https://overkilltodoapp.vercel.app/notification.png",
-      showTrigger: new TimestampTrigger(data.time),
+      // showTrigger: new TimestampTrigger(data.time),
       actions: [
         {
           action: "check",
