@@ -26,7 +26,7 @@ export default async function handler(req, res) {
       JSON.stringify({
         title: "Upcomming task",
         message: addedTodo.title,
-        time: addedTodo.completeBy,
+        time: addedTodo.completeby,
       })
     )
     .then((response) => {
