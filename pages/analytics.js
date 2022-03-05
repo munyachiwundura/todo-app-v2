@@ -71,7 +71,7 @@ export async function getServerSideProps(context) {
     };
   } else {
     const request = await fetch(
-      `http://therealmunya.vercel.app/api/analytics`,
+      `http://overkilltodoapp.vercel.app/api/analytics`,
       {
         method: "POST",
         body: JSON.stringify({
