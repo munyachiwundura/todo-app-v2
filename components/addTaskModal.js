@@ -33,9 +33,9 @@ const AddTaskModal = (props) => {
       body: JSON.stringify({
         todo: {
           title: taskTitle,
-        completeby: taskTime,
-        category: { connect: { id: category.id } },
-        User: { connect: { email: session.user.email } },
+          completeby: taskTime,
+          category: { connect: { id: category.id } },
+          User: { connect: { email: session.user.email } },
         },
         subscription: subscription,
       }),
