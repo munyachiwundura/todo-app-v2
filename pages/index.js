@@ -171,7 +171,7 @@ export default function Home(props) {
   return (
     <>
       <Head>
-        <title>Million Dollar Todo App</title>
+        <title>Home | Overkill To-Do App</title>
       </Head>
       <div className={styles.container}>
         <header className={styles.greeting_container}>

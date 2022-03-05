@@ -1,14 +1,11 @@
 # Overkill To-do App
 
 ![Cover Image](https://raw.githubusercontent.com/munyachiwundura/todo-app-v2/main/public/Todoappcover.png)
-As the name implies this is just an over-engineered to-do app there is probalby better apps out there but this was my first attempt at my default stack for making progressive web apps and is [currently deployed at](https://overkilltodoapp.vercel.app)
+As the name implies this is just an over-engineered to-do app there is probalby better apps out there but this was my first attempt at my default stack for making progressive web apps and is [currently deployed on Vercel](https://overkilltodoapp.vercel.app)
 
 ## Preview
 
-
 https://user-images.githubusercontent.com/90007302/156883564-35d28979-4da4-495e-8265-6c1f7940d2a8.mp4
-
-
 
 ## Technology used
 
@@ -22,7 +19,7 @@ https://user-images.githubusercontent.com/90007302/156883564-35d28979-4da4-495e-
 
 ## Getting Started
 
-[Access the app at](https://overkilltodoapp.vercel.app)
+[Access the app](https://overkilltodoapp.vercel.app)
 
 ### Creating an Account
 
@@ -79,13 +76,13 @@ The design was roughly reverse engineered from [this design](https://ui8.net/ui8
 
 ### Acknowledgements
 
--Obviously the designers at [UI8](https://ui8.net/) who I'm yet to inform about my borrowed inspiration
--Lee Rob literally told me everything I know about Next.js
--Colby Fayok whose tutorial on page animations taught me how to implement them to this app
--James Quick For the Next-auth tutorial
--Fireship.io "yup thats your real name" Literally inspired my whole tech stack trhough his videos
--Ben Award Taught me React is better than Angular
--Ryan Chenkie For the prisma tutorial
+- Obviously the designers at [UI8](https://ui8.net/) who I'm yet to inform about my borrowed inspiration
+- [Lee Rob](https://github.com/leerob) literally told me everything I know about Next.js
+- [Colby Fayok](https://github.com/colbyfayock) whose tutorial on page animations taught me how to implement them to this app
+- [James Quick](https://github.com/jamesqquick) For the Next-auth tutorial
+- [Fireship.io](https://github.com/codediodeio) "yup thats your real name" Literally inspired my whole tech stack trhough his videos
+- [Ben Award](https://github.com/benawad) Taught me React is better than Angular
+- [Ryan Chenkie](https://github.com/chenkie) For the prisma tutorial
 
 I'll probably not make all these acknolwedgents when I use this technology in the future but I'm eternally greatful :)
 
@@ -97,14 +94,14 @@ I'll probably not make all these acknolwedgents when I use this technology in th
 
 ![Cover Image](https://raw.githubusercontent.com/munyachiwundura/todo-app-v2/main/public/Screenshot2.png)
 
-![Cover Image](https://raw.githubusercontent.com/munyachiwundura/todo-app-v2/main/public/Screenshot3.png)
-
 ![Cover Image](https://raw.githubusercontent.com/munyachiwundura/todo-app-v2/main/public/Screenshot4.png)
 
 ![Cover Image](https://raw.githubusercontent.com/munyachiwundura/todo-app-v2/main/public/Screenshot5.png)
 
+![Cover Image](https://raw.githubusercontent.com/munyachiwundura/todo-app-v2/main/public/Screenshot3.png)
+
+![Cover Image](https://raw.githubusercontent.com/munyachiwundura/todo-app-v2/main/public/Screenshot8.png)
+
 ![Cover Image](https://raw.githubusercontent.com/munyachiwundura/todo-app-v2/main/public/Screenshot6.png)
 
 ![Cover Image](https://raw.githubusercontent.com/munyachiwundura/todo-app-v2/main/public/Screenshot7.png)
-
-![Cover Image](https://raw.githubusercontent.com/munyachiwundura/todo-app-v2/main/public/Screenshot8.png)

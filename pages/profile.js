@@ -5,6 +5,7 @@ import Image from "next/image";
 import { signOut, useSession, signIn } from "next-auth/react";
 import styles from "../styles/Profile.module.css";
 import { motion } from "framer-motion";
+import Head from "next/head";
 
 const base64ToUint8Array = (base64) => {
   const padding = "=".repeat((4 - (base64.length % 4)) % 4);
@@ -117,6 +118,9 @@ export default function Profile() {
 
       {session ? (
         <>
+          <Head>
+            <title>Account | Overkill To-Do App</title>
+          </Head>
           <div className={styles.user_container}>
             <div className={styles.profile_picture}>
               <Image
@@ -172,14 +176,16 @@ export default function Profile() {
           </section>
           <section className={styles.help_buttons}>
             <span>Help</span>
-            <motion.button transition={spring} whileTap={tap}>
-              <i className="bi bi-question-circle"></i>Help
-            </motion.button>
+            <a href="https://overkilltodoapp.vercel.app">
+              <motion.button transition={spring} whileTap={tap}>
+                <i className="bi bi-question-circle"></i>Help
+              </motion.button>
+            </a>
           </section>
         </>
       ) : (
         <div className={styles.login}>
-          <img src="/greeter.svg" />
+          <img src="/greeter.svg" alt="Greeeter" />
           <h1>The only todo app you will ever need</h1>
           <div className={styles.login_button} onClick={() => signIn()}>
             Get Started

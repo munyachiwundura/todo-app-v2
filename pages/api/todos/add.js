@@ -24,7 +24,7 @@ export default async function handler(req, res) {
     .sendNotification(
       data.subscription,
       JSON.stringify({
-        title: "Upcomming task",
+        title: "Task Added",
         message: addedTodo.title,
         time: addedTodo.completeby,
       })
@@ -41,7 +41,5 @@ export default async function handler(req, res) {
         res.end();
       }
     });
-
-  console.log(addedTodo);
   res.status(200).json({ addedTodo });
 }

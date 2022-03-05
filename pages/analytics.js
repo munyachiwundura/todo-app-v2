@@ -4,12 +4,16 @@ import OverallTasksProgress from "../components/overallTasksProgress";
 import WeeklyTaskProgress from "../components/weeklyTaskProgress";
 import styles from "../styles/analytics.module.css";
 import { getSession } from "next-auth/react";
+import Head from "next/head";
 
 export default function Analytics(props) {
   console.log(props.analytics.analytics.total);
   const tap = { opacity: 0.6 };
   return (
     <div className={styles.container}>
+      <Head>
+        <title>Analytics | Overkill To-Do App</title>
+      </Head>
       <h1>Analytics</h1>
       <header>
         <p className={styles.title}>Here is an overview of your goals</p>
