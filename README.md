@@ -3,6 +3,10 @@
 ![Cover Image](https://raw.githubusercontent.com/munyachiwundura/todo-app-v2/main/public/Todoappcover.png)
 As the name implies this is just an over-engineered to-do app there is probalby better apps out there but this was my first attempt at my default stack for making progressive web apps and is [currently deployed at](https://overkilltodoapp.vercel.app)
 
+## Preview
+
+![Cover Image](https://raw.githubusercontent.com/munyachiwundura/todo-app-v2/main/public/video.mp4)
+
 ## Technology used
 
 - Javascript Library [React](https://reactjs.org/)
@@ -99,3 +103,5 @@ I'll probably not make all these acknolwedgents when I use this technology in th
 ![Cover Image](https://raw.githubusercontent.com/munyachiwundura/todo-app-v2/main/public/Screenshot6.png)
 
 ![Cover Image](https://raw.githubusercontent.com/munyachiwundura/todo-app-v2/main/public/Screenshot7.png)
+
+![Cover Image](https://raw.githubusercontent.com/munyachiwundura/todo-app-v2/main/public/Screenshot8.png)
