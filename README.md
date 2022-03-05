@@ -1,6 +1,6 @@
 # Overkill To-do App
 
-![alt text](https://raw.githubusercontent.com/munyachiwundura/todo-app-v2/main/public/Todoappcover.png)
+![Cover Image](https://raw.githubusercontent.com/munyachiwundura/todo-app-v2/main/public/Todoappcover.png)
 As the name implies this is just an over-engineered to-do app there is probalby better apps out there but this was my first attempt at my default stack for making progressive web apps and is [currently deployed at](https://overkilltodoapp.vercel.app)
 
 ## Technology used
@@ -25,13 +25,13 @@ You will be then redirected to the home page after signing up you can now start 
 
 ### Adding a Task
 
-for your first task you can save it to the default category or create a new category.
+For your first task you can save it to the default category or create a new category.
 after submitting the new task you will recieve a notification,
 The notifications are currently set to show at the moment you add a new notification since there is a bit of an issue with browser support for locally sceduling notifications
 
 ### Some settings
 
-on the account page you can change a few settings to your preference however currently the only supported actions are signing out and allowing notifications
+On the account page you can change a few settings to your preference however currently the only supported actions are signing out and allowing notifications
 
 ## Run It Locally
 
@@ -61,3 +61,41 @@ yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Background Info
+
+So I started making this app as my first full stack Nextjs project, At first I was supposed to be a simple to-do app with tasks set in state. But as I stated to learn new technologies I added these to the app and making it a fine example of overengineering and pesronally a testament to my willingness to learn new things
+
+### inspiration
+
+The design was roughly reverse engineered from [this design](https://ui8.net/ui8/products/taskez-productivity-app-ios-ui-kit?ref=dribbb) from [UI8](https://ui8.net/) which I had found on dribbble so I decided to remodel the components in [figma](https://www.figma.com/file/G9XQORbDLWTOo0dlV7t8o6/IOS?node-id=0%3A1) at first before I can start developing them in nextjs.
+
+### Acknowledgements
+
+-Obviously the designers at [UI8](https://ui8.net/) who I'm yet to inform about my borrowed inspiration
+-Lee Rob literally told me everything I know about Next.js
+-Colby Fayok whose tutorial on page animations taught me how to implement them to this app
+-James Quick For the Next-auth tutorial
+-Fireship.io "yup thats your real name" Literally inspired my whole tech stack trhough his videos
+-Ben Award Taught me React is better than Angular
+-Ryan Chenkie For the prisma tutorial
+
+I'll probably not make all these acknolwedgents when I use this technology in the future but I'm eternally greatful :)
+
+### Screenshots
+
+![Cover Image](https://raw.githubusercontent.com/munyachiwundura/todo-app-v2/main/public/Todoappcover.png)
+
+![Cover Image](https://raw.githubusercontent.com/munyachiwundura/todo-app-v2/main/public/Screenshot1.png)
+
+![Cover Image](https://raw.githubusercontent.com/munyachiwundura/todo-app-v2/main/public/Screenshot2.png)
+
+![Cover Image](https://raw.githubusercontent.com/munyachiwundura/todo-app-v2/main/public/Screenshot3.png)
+
+![Cover Image](https://raw.githubusercontent.com/munyachiwundura/todo-app-v2/main/public/Screenshot4.png)
+
+![Cover Image](https://raw.githubusercontent.com/munyachiwundura/todo-app-v2/main/public/Screenshot5.png)
+
+![Cover Image](https://raw.githubusercontent.com/munyachiwundura/todo-app-v2/main/public/Screenshot6.png)
+
+![Cover Image](https://raw.githubusercontent.com/munyachiwundura/todo-app-v2/main/public/Screenshot7.png)
