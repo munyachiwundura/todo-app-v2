@@ -1,17 +1,17 @@
 #Overkill To-do App
 
-![alt text](https://github.com/[munyachiwundura]/[todo-app-v2]/blob/[main]public/Todoappcover.png?raw=true)
+![alt text](https://raw.githubusercontent.com/munyachiwundura/todo-app-v2/main/public/Todoappcover.png)
 As the name implies this is just an over-engineered to-do app there is probalby better apps out there but this was my first attempt at my default stack for making progressive web apps and is [currently deployed at](https://overkilltodoapp.vercel.app)
 
 ## Technology used
 
-- Javascript Library [React] (https://reactjs.org/)
-- React Framework [Nextjs] (https://nextjs.org/)
-- Object Relation Model [Prisma] (https://www.prisma.io/)
-- Database Deployment [Planet-scale] (https://planetscale.com/)
-- Animation [Framer-motion] (https://www.framer.com/motion/)
-- Progressive Web App [next-pwa] (https://www.npmjs.com/package/next-pwa)
-- Deployment [Vercel] (https://vercel.com/)
+- Javascript Library [React](https://reactjs.org/)
+- React Framework [Nextjs](https://nextjs.org/)
+- Object Relation Model [Prisma](https://www.prisma.io/)
+- Database Deployment [Planet-scale](https://planetscale.com/)
+- Animation [Framer-motion](https://www.framer.com/motion/)
+- Progressive Web App [next-pwa](https://www.npmjs.com/package/next-pwa)
+- Deployment [Vercel](https://vercel.com/)
 
 ## Getting Started
 
