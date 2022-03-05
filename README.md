@@ -5,7 +5,10 @@ As the name implies this is just an over-engineered to-do app there is probalby 
 
 ## Preview
 
-https://raw.githubusercontent.com/munyachiwundura/todo-app-v2/main/public/video.mp4
+
+https://user-images.githubusercontent.com/90007302/156883564-35d28979-4da4-495e-8265-6c1f7940d2a8.mp4
+
+
 
 ## Technology used
 
