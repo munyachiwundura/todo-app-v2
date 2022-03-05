@@ -24,9 +24,9 @@ export default async function handler(req, res) {
     .sendNotification(
       data.subscription,
       JSON.stringify({
-        title: "New Task Added",
+        title: "Upcomming task",
         message: addedTodo.title,
-        time: new Date(),
+        time: addedTodo.completeBy,
       })
     )
     .then((response) => {

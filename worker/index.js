@@ -6,18 +6,18 @@ self.addEventListener("push", function (event) {
     registration.showNotification(data.title, {
       body: data.message,
       icon: "https://overkilltodoapp.vercel.app/icon.png",
-      image: "https://overkilltodoapp.vercel.app/icon.png",
+      image: "https://overkilltodoapp.vercel.app/notification.png",
       // showTrigger: new TimestampTrigger(data.time),
       actions: [
         {
-          action: "explore",
+          action: "check",
           title: "Complete",
-          icon: "https://overkilltodoapp.vercel.app/icon.png",
+          icon: "https://overkilltodoapp.vercel.app/check.png",
         },
         {
           action: "close",
           title: "Close",
-          icon: "https://overkilltodoapp.vercel.app/icon.png",
+          icon: "https://overkilltodoapp.vercel.app/close.png",
         },
       ],
     })
